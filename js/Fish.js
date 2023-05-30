@@ -6,7 +6,7 @@ AFRAME.registerComponent("fish", {
       const posX = Math.random() * 100 + -50;
       const posY = Math.random() * 5 + 5;
       const posZ = Math.random() * 60 + -40;
-      const position = { x: posX, y: posY, z: posZ };
+      const position = { x: posX, y: posY, z: posZ }; 
       this.genrateFish(id, position);
     }
   },
@@ -32,13 +32,13 @@ AFRAME.registerComponent("fish", {
 
     fishEl.setAttribute("animation-mixer", {});
 
-    //set the static body attribute of physics system 
+
     fishEl.setAttribute("static-body", {
       shape: "sphere",
       sphereRadius: 2
     });
 
-     //set the game play attribute
+
      fishEl.setAttribute("game-play", {
       elementId: `#${id}`,
     });
